@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokabeltrainer</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+        <ul>
+            <li>
+                <h3>VOKABEL</h3>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">menu</span>
+                <ul class="dropdown">
+                    <h4>NAVIGATION</h4>
+                    <li id="active">
+                        <a href="index.html">VOKABELLISTE</a>
+                    </li>
+
+                    <li>
+                        <a href="test.html">TESTE DICH</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- NAVIGATION -->
+
+    <!-- VOKABEL-TABELLE -->
+    <div class="container-mitte">
+
+        <!-- NEUES WORT / WORT LÖSCHEN / BUTTONS -->
+
+        <div id="button-action">
+            <button class="button">NEUES WORT</button>
+        </div>
+
+        <!-- NEUES WORT / WORT LÖSCHEN / BUTTONS-->
+
+    </div>
+
+    <!-- NEUES WORT -->
+
+    <div class="neues-wort">
+        <form id="eingabeformular-eingabe" action="#" methode="get">
+
+            <label class="caption" form="eingabeformular-eingabe">Eingabeformular: Neues Wort</label>
+
+            <div class="eingabe-zeile">
+                <label title="Karpitel">Karpitelliste</label>
+                <div class="select-container">
+                    <div id="auswahl">
+                        <p>Wähle Karpitel:</p>
+                        <span id="drop-select">&#9660;</span>
+                    </div>
+                    <ul class="option">
+                        <li style="display: none;"><input type="radio" name="karpitelliste" value="" hidden></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="eingabe-zeile">
+                <label for="karpitel_input" title="Karpitel">Neues Karpitel</label>
+                <input type="text" id="karpitel_input" form="eingabeformular-eingabe" name="karpitel_input" title="Eingabe-Karpitel"
+                    placeholder="Eingabe" pattern="^([öüäÄÖÜ]|\w|\s)*$">
+            </div>
+
+            <div class="eingabe-zeile">
+                <label for="DE" title="DE-Vokabel">DEUTSCH</label>
+                <input type="text" id="DE" form="eingabeformular-eingabe" name="DE" title="DE-Vokabel"
+                    placeholder="Eingabe" pattern="^([öüäÄÖÜ]|\w|\s)*$">
+            </div>
+
+            <div class="eingabe-zeile">
+                <label for="ENG" title="ENG-Vokabel">ENGLISCH</label>
+                <input type="text" id="ENG" form="eingabeformular-eingabe" name="ENG" title="ENG-Vokabel"
+                    placeholder="Eingabe" pattern="^([öüäÄÖÜ]|\w|\s)*$">
+            </div>
+
+            <div class="eingabe-zeile button-container">
+                <button class="form-button" type="submit" form="eingabeformular-eingabe">Hinzufügen</button>
+            </div>
+
+            <div class="eingabe-zeile button-container">
+                <button class="form-button" type="submit" form="eingabeformular-eingabe">Abbrechen</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- NEUES WORT -->
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./src/js/anzeigen.js" defer></script>
+    <script src="./src/js/Vokabel.js" defer></script>
+    <script src="./src/js/Vokabel-Liste.js" defer></script>
+    <script src="./src/js/main.js" defer></script>
+
+    <!-- JAVASCRIPT -->
+
+</body>
+
+</html>
